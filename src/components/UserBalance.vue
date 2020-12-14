@@ -20,7 +20,7 @@ export default {
         this.username = this.$route.params.username
         
         let self = this
-        axios.get("https://cajero-api-1987.herokuapp.com/user/balance/" + this.username)
+        axios.get("https://prueba-cajero-api.herokuapp.com/user/balance/" + this.username)
             .then((result) => {
                 self.balance = result.data.balance
             })
